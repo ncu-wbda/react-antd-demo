@@ -1,4 +1,5 @@
 ﻿export default [
+  // user
   {
     path: '/user',
     layout: false,
@@ -18,18 +19,32 @@
       },
     ],
   },
+  // welcome
   {
     path: '/welcome',
     name: 'welcome',
     icon: 'smile',
-    component: './Welcome',
+    routes: [
+      {
+        path: '/welcome/test',
+        name: 'test',
+        icon: 'smile',
+        component: './test/testDemo'
+      },
+      {
+        path: '/welcome/test2',
+        name: '404',
+        icon: 'smile',
+        component: './404'
+      }
+    ]
   },
+  // admin
   {
     path: '/admin',
     name: 'admin',
     icon: 'crown',
     access: 'canAdmin',
-    component: './Admin',
     routes: [
       {
         path: '/admin/sub-page',
@@ -38,7 +53,14 @@
         component: './Welcome',
       },
       {
+        path: '404',
+        name: '404',
         component: './404',
+      },
+      {
+        path: '/admin/test',
+        icon: 'smile',
+        component: './test/testDemo'
       },
     ],
   },
