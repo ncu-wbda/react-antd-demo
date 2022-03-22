@@ -27,13 +27,11 @@
     routes: [
       {
         path: '/welcome/test',
-        name: 'test',
         icon: 'smile',
         component: './test/testDemo'
       },
       {
         path: '/welcome/test2',
-        name: '404',
         icon: 'smile',
         component: './404'
       }
@@ -68,24 +66,24 @@
   //   ],
   // },
   {
-    name: '考试',
+    name: 'exam',
     icon: 'BookOutlined',
     path: '/exam',
     routes: [
       {
         path: 'release',
-        name: '我的考试',
+        name: 'release',
         component: './Welcome',
       },
       {
         path: 'review',
-        name: '批阅',
+        name: 'review',
         component: './Welcome',
       },
       {
         path: 'analysis',
         icon: 'PieChartOutlined',
-        name: '分析统计',
+        name: 'analysis',
         component: './Welcome',
       },
       {
@@ -94,20 +92,20 @@
     ]
   },
   {
-    name: '题库',
+    name: 'bank',
     icon: 'table',
     path: '/bank',
     routes: [
       {
         // 主要是可以新建各种题型对应的试题
         path: 'quiz',
-        name: '试题库',
+        name: 'quiz',
         component: './TableList',
       },
       {
         // 可以新建试卷，也可以查看以前保存的试卷 导出试卷
         path: 'exam',
-        name: '试卷库',
+        name: 'exam',
         component: './TableList',
       },
       {
@@ -116,7 +114,7 @@
     ]
   },
   {
-    name: '在线监考',
+    name: 'monitor',
     icon: 'CameraOutlined',
     path: '/monitor',
     component: './test/camTest',

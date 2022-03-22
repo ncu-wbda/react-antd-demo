@@ -129,6 +129,10 @@ export class WebCamWebAPI extends React.Component{
     let canvas = document.getElementById('canvas');
     let context = canvas.getContext('2d');
     context.drawImage(video, 0, 0, 400, 320);
+    var imgSrc = canvas.toDataURL();  //获取图片的DataURL
+    var newImg = new Image();
+    newImg.src = imgSrc;  //将图片路径赋值给src
+    console.log(imgSrc)
   };
   //拍照添加到列表
   takePictureToList = () => {
