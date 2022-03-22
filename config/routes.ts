@@ -119,7 +119,7 @@
     name: '在线监考',
     icon: 'CameraOutlined',
     path: '/monitor',
-    component: './404',
+    component: './test/camTest',
   },
   // {
   //   name: 'list.table-list',
