@@ -28,12 +28,14 @@
       {
         path: '/welcome/test',
         icon: 'smile',
+        name: 'test',
         component: './test/testDemo'
       },
       {
         path: '/welcome/test2',
+        name: 'test2',
         icon: 'smile',
-        component: './404'
+        component: './FormPro'
       }
     ]
   },
