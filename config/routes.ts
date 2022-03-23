@@ -75,18 +75,18 @@
       {
         path: 'release',
         name: 'release',
-        component: './Welcome',
+        component: './exam/releaseForm',
       },
       {
         path: 'review',
         name: 'review',
-        component: './Welcome',
+        component: './exam/review',
       },
       {
         path: 'analysis',
         icon: 'PieChartOutlined',
         name: 'analysis',
-        component: './Welcome',
+        component: './exam/analysis',
       },
       {
         component: './404'
@@ -102,13 +102,13 @@
         // 主要是可以新建各种题型对应的试题
         path: 'quiz',
         name: 'quiz',
-        component: './TableList',
+        component: './bank/quiz',
       },
       {
         // 可以新建试卷，也可以查看以前保存的试卷 导出试卷
         path: 'exam',
         name: 'exam',
-        component: './TableList',
+        component: './bank/exam',
       },
       {
         component: './404',
